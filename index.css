@@ -1,0 +1,271 @@
+/* Project Spear Phish Scammers is a social engineering web app to find a target's device location.
+    Copyright (C) 2024  Tushar Wagh
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see https://www.gnu.org/licenses/gpl-3.0.en.html.
+    I am available for queries: cstusharwagh@gmail.com */
+
+by .home-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.home-pop-up {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: none;
+  z-index: 10;
+  position: fixed;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(8, 8, 8, 0.82);
+  transition: opacity 0.3s ease;
+}
+.home-pop-up-item {
+  flex: 0 0 auto;
+  width: 65%;
+  height: 90%;
+  display: flex;
+  align-self: center;
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #000000;
+}
+.home-icon {
+  fill: #D9D9D9;
+  width: var(--dl-size-size-small);
+  height: var(--dl-size-size-small);
+  align-self: flex-end;
+  cursor: pointer;
+}
+.home-text {
+  color: rgb(214, 164, 211);
+  height: 41px;
+}
+.home-text1 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+.home-image {
+  width: 315px;
+  height: 508px;
+  object-fit: cover;
+}
+.home-button {
+  color: rgb(255, 5, 134);
+  font-style: normal;
+  margin-top: 1px;
+  font-weight: 600;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: rgb(49, 47, 47);
+}
+.home-text3 {
+  color: rgb(74, 72, 72);
+  font-style: normal;
+  margin-top: var(--dl-space-space-halfunit);
+  font-weight: 600;
+}
+.home-container1 {
+  height: 78px;
+}
+.home-text4 {
+  align-self: center;
+  text-align: center;
+  font-family: "Comic Sans MS";
+}
+.home-text5 {
+  font-size: 20px;
+}
+.home-container-slider {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 398px;
+  display: flex;
+  margin-top: var(--dl-space-space-halfunit);
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 9px;
+}
+.home-icon {
+  fill: #D9D9D9;
+  width: var(--dl-size-size-small);
+  height: var(--dl-size-size-small);
+  align-self: flex-end;
+}
+.home-slider {
+  width: 500px;
+  height: 300px;
+  display: inline-block;
+}
+.home-slider-slide {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.home-image1 {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+}
+.home-slider-slide1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-image2 {
+  width: 200px;
+  object-fit: cover;
+}
+.home-slider-slide2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-image3 {
+  width: 200px;
+  object-fit: cover;
+}
+.home-slider-slide3 {
+  display: flex ;
+  justify-content: center;
+}
+.home-image4 {
+  width: 200px;
+  object-fit: cover;
+}
+.home-slider-pagination {
+  display: block;
+}
+.home-container2 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-button1 {
+  color: rgb(255, 5, 134);
+  align-self: center;
+  font-style: normal;
+  font-weight: 600;
+  border-style: solid;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: .3s;
+}
+.home-button1:focus {
+  color:#ff0586;
+  border: 1px solid rgba(237, 55, 119, 0);
+  box-shadow: 0px 0px 0px 1px rgb(210, 54, 163);
+  animation: anim-shadow .3s forwards;
+}
+@keyframes anim-shadow {
+  100%{
+    box-shadow: 0px 0px 50px 20px rgba(237, 55, 119, 0);
+  }
+}
+.home-text6 {
+  font-style: normal;
+  margin-top: var(--dl-space-space-halfunit);
+  font-weight: 500;
+  text-align: center;
+}
+@media(max-width: 479px) {
+  .home-pop-up {
+    height: 87vh;
+    display: none;
+  }
+  .home-pop-up-item {
+    width: 87%;
+    height: 100vh;
+  }
+  .home-text {
+    color: rgb(214, 164, 211);
+    width: 95%;
+    height: 6%;
+    text-align: center;
+  }
+  .home-text1 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .home-text3 {
+    color: rgb(74, 72, 72);
+    width: 95%;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .home-container1 {
+    height: 100%;
+  }
+  .home-text4 {
+    width: 100%;
+    font-family: Comic Sans MS;
+  }
+  .home-text5 {
+    width: 98%;
+    font-size: 19px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+  }
+  .home-container-slider {
+    width: 98%;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-slider {
+    width: 98%;
+  }
+  .home-button {
+    color: rgb(255, 5, 134);
+    font-style: normal;
+    margin-top: 3px;
+    font-weight: 600;
+    border-radius: var(--dl-radius-radius-radius8);
+    background-color: rgb(49, 47, 47);
+  }
+  .home-button1 {
+    color: rgb(255, 5, 134);
+    font-style: normal;
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: .3s;
+}
+.home-button1:focus {
+  color:#ff0586;
+  border: 1px solid rgba(237, 55, 119, 0);
+  box-shadow: 0px 0px 0px 1px rgb(210, 54, 163);
+  animation: anim-shadow .3s forwards;
+}
+@keyframes anim-shadow {
+  100%{
+    box-shadow: 0px 0px 50px 20px rgba(237, 55, 119, 0);
+  }
+}
